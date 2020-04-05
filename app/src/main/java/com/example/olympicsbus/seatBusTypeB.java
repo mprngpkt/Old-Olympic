@@ -4,26 +4,22 @@ import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 
 
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link timeTable.OnFragmentInteractionListener} interface
+ * {@link seatBusTypeB.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link timeTable#newInstance} factory method to
+ * Use the {@link seatBusTypeB#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class timeTable extends Fragment {
+public class seatBusTypeB extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -35,7 +31,7 @@ public class timeTable extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public timeTable() {
+    public seatBusTypeB() {
         // Required empty public constructor
     }
 
@@ -45,11 +41,11 @@ public class timeTable extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment timeTable.
+     * @return A new instance of fragment seatBusTypeB.
      */
     // TODO: Rename and change types and number of parameters
-    public static timeTable newInstance(String param1, String param2) {
-        timeTable fragment = new timeTable();
+    public static seatBusTypeB newInstance(String param1, String param2) {
+        seatBusTypeB fragment = new seatBusTypeB();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -67,9 +63,10 @@ public class timeTable extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_time_table, container, false);
+        return inflater.inflate(R.layout.fragment_seat_bus_type_b, container, false);
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -109,24 +106,5 @@ public class timeTable extends Fragment {
     public interface OnFragmentInteractionListener {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
-    }
-
-    @Override
-    public void onViewCreated(@NonNull final View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-        Button busTypeA = (Button)view.findViewById(R.id.btn_typeA);
-        Button busTypeB = (Button)view.findViewById(R.id.btn_typeB);
-        busTypeA.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Navigation.findNavController(view).navigate(R.id.timeTable_to_seatBusTypeA);
-            }
-        });
-        busTypeB.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Navigation.findNavController(view).navigate(R.id.action_timeTable_to_seatBusTypeB);
-            }
-        });
     }
 }

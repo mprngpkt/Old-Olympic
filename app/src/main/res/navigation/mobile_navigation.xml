@@ -49,6 +49,9 @@
         <action
             android:id="@+id/timeTable_to_seatBusTypeA"
             app:destination="@id/seatBusTypeA" />
+        <action
+            android:id="@+id/action_timeTable_to_seatBusTypeB"
+            app:destination="@id/seatBusTypeB" />
     </fragment>
     <fragment
         android:id="@+id/seatBusTypeA"
@@ -73,4 +76,9 @@
             android:id="@+id/bus3_to_timeTable"
             app:destination="@id/timeTable" />
     </fragment>
+    <fragment
+        android:id="@+id/seatBusTypeB"
+        android:name="com.example.olympicsbus.seatBusTypeB"
+        android:label="fragment_seat_bus_type_b"
+        tools:layout="@layout/fragment_seat_bus_type_b" />
 </navigation>

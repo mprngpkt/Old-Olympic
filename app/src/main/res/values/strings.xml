@@ -12,4 +12,8 @@
     <string name="book_bus_1">Book now</string>
     <string name="book_bus_2">Book now</string>
     <string name="book_bus_3">Book now</string>
+    <string name="txtBustoSwimming">Buses to  \n Swimming Preliminary  \n Round Women</string>
+    <string name="typeA">12.30-13.00 \n  TYPE A  \n (20 out of 20 left)</string>
+    <string name="typeB">13.00-13.30  \n TYPE B  \n (20 out of 20 left)</string>
+    <string name="typeC">13.30-14.00  \n TYPE B \n  (20 out of 20 left)</string>
 </resources>
