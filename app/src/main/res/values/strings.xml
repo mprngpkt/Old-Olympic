@@ -6,4 +6,8 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="buses_to_swimming_preliminary_round_women">Buses to Swimming   Preliminary Round  Women</string>
+    <string name="typeA">12.00-13.00  \n TYPE A  \n (20 out of 20 left)</string>
+    <string name="typeB">13.00-13.30 \n  TYPE B  \n (10 out of 10 left)</string>
+    <string name="typeC">13.30-14.00 \n  TYPE C  \n (10 out of 10 left)</string>
 </resources>

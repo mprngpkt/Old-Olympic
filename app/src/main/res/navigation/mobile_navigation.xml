@@ -31,4 +31,9 @@
         android:name="com.example.olympicsbus.Bus1"
         android:label="fragment_bus1"
         tools:layout="@layout/fragment_bus1" />
+    <fragment
+        android:id="@+id/timeTable"
+        android:name="com.example.olympicsbus.timeTable"
+        android:label="fragment_time_table"
+        tools:layout="@layout/fragment_time_table" />
 </navigation>
