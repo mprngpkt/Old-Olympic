@@ -15,34 +15,61 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.22"
-        app:srcCompat="@drawable/swim" />
+        app:srcCompat="@drawable/swim"
+        android:contentDescription="TODO" />
 
     <Button
         android:id="@+id/event1Button"
         android:layout_width="280dp"
         android:layout_height="124dp"
-        android:text="Button"
+        android:text="@string/women_round"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.221" />
+        app:layout_constraintVertical_bias="0.22" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/iconEvent2View"
         android:layout_width="131dp"
         android:layout_height="124dp"
         android:layout_marginTop="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/iconEvent1View"
-        app:srcCompat="@drawable/swim" />
+        app:srcCompat="@drawable/swim"
+        android:contentDescription="TODO" />
 
     <Button
         android:id="@+id/event2Button"
         android:layout_width="280dp"
         android:layout_height="124dp"
         android:layout_marginTop="20dp"
-        android:text="Button"
+        android:text="@string/men_round"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/iconEvent2View"
         app:layout_constraintTop_toBottomOf="@+id/event1Button" />
+
+    <Button
+        android:id="@+id/event3Button"
+        android:layout_width="280dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/medley_round"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/iconEvent2View"
+        app:layout_constraintTop_toBottomOf="@+id/event2Button"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/iconEvent3View"
+        android:layout_width="131dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="184dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iconEvent2View"
+        app:srcCompat="@drawable/swim" />
 </androidx.constraintlayout.widget.ConstraintLayout>

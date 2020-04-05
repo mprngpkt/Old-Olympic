@@ -28,11 +28,28 @@ public class HomeFragment extends Fragment {
     public void onViewCreated(@NonNull final View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         Button bus1 = (Button)view.findViewById(R.id.event1Button);
+        Button bus2 = (Button)view.findViewById(R.id.event2Button);
+        Button bus3 = (Button)view.findViewById(R.id.event3Button);
         bus1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Navigation.findNavController(view).navigate(R.id.home_to_bus1);
             }
-        });
+        }
+        );
+        bus2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Navigation.findNavController(view).navigate(R.id.home_to_bus2);
+            }
+        }
+        );
+        bus3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Navigation.findNavController(view).navigate(R.id.home_to_bus3);
+            }
+        }
+        );
     }
 }
