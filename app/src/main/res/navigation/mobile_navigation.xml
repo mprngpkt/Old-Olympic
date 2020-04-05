@@ -13,6 +13,12 @@
         <action
             android:id="@+id/home_to_bus1"
             app:destination="@id/bus1" />
+        <action
+            android:id="@+id/home_to_bus2"
+            app:destination="@id/bus2" />
+        <action
+            android:id="@+id/home_to_bus3"
+            app:destination="@id/bus3" />
     </fragment>
 
     <fragment
@@ -30,7 +36,11 @@
         android:id="@+id/bus1"
         android:name="com.example.olympicsbus.Bus1"
         android:label="fragment_bus1"
-        tools:layout="@layout/fragment_bus1" />
+        tools:layout="@layout/fragment_bus1" >
+        <action
+            android:id="@+id/bus1_to_timeTable"
+            app:destination="@id/timeTable" />
+    </fragment>
     <fragment
         android:id="@+id/timeTable"
         android:name="com.example.olympicsbus.timeTable"
@@ -45,4 +55,22 @@
         android:name="com.example.olympicsbus.seatBusTypeA"
         android:label="fragment_seat_bus_type"
         tools:layout="@layout/fragment_seat_bus_type" />
+    <fragment
+        android:id="@+id/bus2"
+        android:name="com.example.olympicsbus.Bus2"
+        android:label="fragment_bus2"
+        tools:layout="@layout/fragment_bus2" >
+        <action
+            android:id="@+id/bus2_to_timeTable"
+            app:destination="@id/timeTable" />
+    </fragment>
+    <fragment
+        android:id="@+id/bus3"
+        android:name="com.example.olympicsbus.Bus3"
+        android:label="fragment_bus3"
+        tools:layout="@layout/fragment_bus3" >
+        <action
+            android:id="@+id/bus3_to_timeTable"
+            app:destination="@id/timeTable" />
+    </fragment>
 </navigation>
