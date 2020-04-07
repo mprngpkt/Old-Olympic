@@ -22,12 +22,6 @@
     </fragment>
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.olympicsbus.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_bookings" />
-
-    <fragment
         android:id="@+id/navigation_notifications"
         android:name="com.example.olympicsbus.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
@@ -88,4 +82,9 @@
         android:id="@+id/seatBusTypeC"
         android:name="com.example.olympicsbus.seatBusTypeC"
         android:label="seatBusTypeC" />
+    <fragment
+        android:id="@+id/bookingFragment"
+        android:name="com.example.olympicsbus.ui.dashboard.BookingFragment"
+        android:label="fragment_bookings"
+        tools:layout="@layout/fragment_bookings" />
 </navigation>
