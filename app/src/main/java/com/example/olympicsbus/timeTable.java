@@ -116,6 +116,7 @@ public class timeTable extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         Button busTypeA = (Button)view.findViewById(R.id.btn_typeA);
         Button busTypeB = (Button)view.findViewById(R.id.btn_typeB);
+        Button busTypeC = (Button)view.findViewById(R.id.btn_typeC);
         busTypeA.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -126,6 +127,12 @@ public class timeTable extends Fragment {
             @Override
             public void onClick(View v) {
                 Navigation.findNavController(view).navigate(R.id.action_timeTable_to_seatBusTypeB);
+            }
+        });
+        busTypeC.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Navigation.findNavController(view).navigate(R.id.timeTable_to_seatBusTypeC);
             }
         });
     }
