@@ -25,7 +25,14 @@
         android:id="@+id/navigation_notifications"
         android:name="com.example.olympicsbus.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_profile" />
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/to_signup"
+            app:destination="@id/signup" />
+        <action
+            android:id="@+id/to_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
     <fragment
         android:id="@+id/bus1"
         android:name="com.example.olympicsbus.Bus1"
@@ -87,4 +94,13 @@
         android:name="com.example.olympicsbus.ui.dashboard.BookingFragment"
         android:label="fragment_bookings"
         tools:layout="@layout/fragment_bookings" />
+    <fragment
+        android:id="@+id/signup"
+        android:name="com.example.olympicsbus.signup"
+        android:label="fragment_signup"
+        tools:layout="@layout/fragment_signup" >
+        <action
+            android:id="@+id/signup_to_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
 </navigation>

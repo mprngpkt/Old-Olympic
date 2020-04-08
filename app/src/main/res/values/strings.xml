@@ -6,12 +6,37 @@
 
     <!-- Home mp-->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="women_round">Swimmimg Preliminary Round \n Women</string>
-    <string name="men_round">Swimmimg Preliminary Round \n Men</string>
+    <string name="women_round">Swimming Preliminary Round \n Women</string>
+    <string name="men_round">Swimming Preliminary Round \n Men</string>
     <string name="medley_round">Swimming Medley \n Women</string>
     <string name="book_bus_1">Book now</string>
     <string name="book_bus_2">Book now</string>
     <string name="book_bus_3">Book now</string>
+    <string name="icon1">icon1</string>
+    <string name="icon2">icon2</string>
+    <string name="icon3">icon3</string>
+    <string name="pool">pool</string>
+
+    <!--Detail mp-->
+    <string name="title1">Swimming \n Preliminary Round \n Women</string>
+    <string name="detail1">VENUE: Tokyo Stadium \n\n DATE: 16.06.20 \n\n START TIME: 14:00 \n\n DURATION: 3.0 hrs \n\n Travel By Bus: 30 minutes</string>
+    <string name="women">Image</string>
+    <string name="title2">Swimming \n Preliminary Round \n Men</string>
+    <string name="detail2">VENUE: Tokyo Stadium \n\n DATE: 16.06.20 \n\n START TIME: 15:00 \n\n DURATION: 3.0 hrs \n\n Travel By Bus: 35 minutes</string>
+    <string name="men">Image</string>
+    <string name="title3">Swimming \n Medley \n Women</string>
+    <string name="detail3">VENUE: Tokyo Stadium \n\n DATE: 16.06.20 \n\n START TIME: 14:00 \n\n DURATION: 3.0 hrs \n\n Travel By Bus: 30 minutes</string>
+    <string name="medley">Image</string>
+
+    <!--Profile mp-->
+    <string name="profile">Image</string>
+    <string name="login">Log In</string>
+    <string name="or">Sign up?</string>
+    <string name="register">Register</string>
+    <string name="sign_up_user">Username</string>
+    <string name="sign_up_pass">Password</string>
+    <string name="sign_up_butt">Sign Up</string>
+
 
     <!-- Home pd -->
     <string name="txtBustoSwimming">Buses to  \n Swimming Preliminary  \n Round Women</string>
@@ -19,12 +44,10 @@
     <string name="typeB">13.00-13.30  \n TYPE B  \n (20 out of 20 left)</string>
     <string name="typeC">13.30-14.00  \n TYPE B \n  (20 out of 20 left)</string>
     <!-- Seat  -->
-    <string name="txt_SwimmingTypeA">Swimming Preliminary \n Round Womer</string>
+    <string name="txt_SwimmingTypeA">Swimming Preliminary \n Round Women</string>
     <string name="seat">Image</string>
     <string name="book">Book</string>
     <string name="back">Back</string>
-
-
 
 
     <!-- Booking  -->

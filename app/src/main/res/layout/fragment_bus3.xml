@@ -17,4 +17,44 @@
         android:text="@string/book_bus_1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="418dp"
+        android:layout_height="218dp"
+        android:layout_marginBottom="516dp"
+        android:contentDescription="@string/medley"
+        android:src="@drawable/medley"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/titleTextView3"
+        android:layout_width="283dp"
+        android:layout_height="142dp"
+        android:layout_marginTop="248dp"
+        android:gravity="center"
+        android:text="@string/title3"
+        android:textColor="#090808"
+        android:textSize="36sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/detailTextView3"
+        android:layout_width="225dp"
+        android:layout_height="246dp"
+        android:layout_marginBottom="92dp"
+        android:gravity="center"
+        android:text="@string/detail3"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleTextView3" />
 </androidx.constraintlayout.widget.ConstraintLayout>
