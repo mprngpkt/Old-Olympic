@@ -27,7 +27,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.6">
+        app:layout_constraintVertical_bias="0.35000002">
 
         <TableRow
             android:layout_width="match_parent"
@@ -46,7 +46,7 @@
                 android:layout_width="80dp"
                 android:layout_height="80dp"
                 android:background="@drawable/seat"
-                android:contentDescription="@string/seat"  />
+                android:contentDescription="@string/seat" />
         </TableRow>
 
         <TableRow
@@ -137,7 +137,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.85"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seatcolum1" />
+        app:layout_constraintTop_toBottomOf="@+id/seatcolum1"
+        app:layout_constraintVertical_bias="0.80" />
 
     <Button
         android:id="@+id/btnBack"
@@ -148,7 +149,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.15"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/seatcolum1" />
+        app:layout_constraintTop_toBottomOf="@+id/seatcolum1"
+        app:layout_constraintVertical_bias="0.80" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
