@@ -18,7 +18,8 @@
         app:layout_constraintBottom_toTopOf="@+id/seatcolum1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center_horizontal" />
 
     <TableLayout
         android:id="@+id/seatcolum1"
@@ -263,4 +264,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/seatcolum1"
         app:layout_constraintVertical_bias="0.80" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="99dp"
+        android:layout_height="106dp"
+        android:src="@drawable/driver"
+        app:layout_constraintBottom_toTopOf="@+id/bynBook"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seatcolum1"
+        android:contentDescription="@string/driver"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
