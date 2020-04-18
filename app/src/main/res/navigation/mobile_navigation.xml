@@ -61,7 +61,7 @@
         android:id="@+id/seatBusTypeA"
         android:name="com.example.olympicsbus.seatBusTypeA"
         android:label="fragment_seat_bus_type"
-        tools:layout="@layout/fragment_seat_bus_typeA" />
+        tools:layout="@layout/fragment_seat_bus_type_a" />
     <fragment
         android:id="@+id/bus2"
         android:name="com.example.olympicsbus.Bus2"
