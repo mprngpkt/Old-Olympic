@@ -29,27 +29,16 @@ public class NotificationsFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull final View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        Button login = (Button) view.findViewById(R.id.loginButton);
-        TextView or = (TextView) view.findViewById(R.id.orSignUpView);
+        Button logout = (Button) view.findViewById(R.id.logoutButton);
 
-        login.setOnClickListener(new View.OnClickListener() {
+        logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Navigation.findNavController(view).navigate(R.id.to_home);
+                Navigation.findNavController(view).navigate(R.id.logout_to_login2);
             }
         }
         );
-        or.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Navigation.findNavController(view).navigate(R.id.to_signup);
-            }
-        }
-        );
-
     }
-
-
 
 
 }

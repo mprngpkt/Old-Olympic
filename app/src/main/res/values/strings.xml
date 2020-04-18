@@ -5,7 +5,7 @@
     <string name="title_notifications">Notifications</string>
 
     <!-- Home mp-->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="projectName">Your Journey to the Olympics</string>
     <string name="women_round">Swimming Preliminary Round \n Women</string>
     <string name="men_round">Swimming Preliminary Round \n Men</string>
     <string name="medley_round">Swimming Medley \n Women</string>
@@ -36,7 +36,11 @@
     <string name="sign_up_user">Username</string>
     <string name="sign_up_pass">Password</string>
     <string name="sign_up_butt">Sign Up</string>
-
+    <string name="login_icon">Image</string>
+    <string name="user_display">UserDisplay</string>
+    <string name="password_display">PasswordDisplay</string>
+    <string name="cardid_display">CardIDDisplay</string>
+    <string name="log_out_butt">Log out</string>
 
     <!-- Home pd -->
     <string name="txtBustoSwimming">Buses to  \n Swimming Preliminary  \n Round Women</string>

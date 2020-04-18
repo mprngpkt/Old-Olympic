@@ -27,11 +27,8 @@
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_profile" >
         <action
-            android:id="@+id/to_signup"
-            app:destination="@id/signup" />
-        <action
-            android:id="@+id/to_home"
-            app:destination="@id/navigation_home" />
+            android:id="@+id/logout_to_login2"
+            app:destination="@id/login2" />
     </fragment>
     <fragment
         android:id="@+id/bus1"
@@ -100,7 +97,16 @@
         android:label="fragment_signup"
         tools:layout="@layout/fragment_signup" >
         <action
-            android:id="@+id/signup_to_home"
-            app:destination="@id/navigation_home" />
+            android:id="@+id/signup_to_profile"
+            app:destination="@id/navigation_notifications" />
+    </fragment>
+    <fragment
+        android:id="@+id/login2"
+        android:name="com.example.olympicsbus.Login2"
+        android:label="fragment_login2"
+        tools:layout="@layout/fragment_login2" >
+        <action
+            android:id="@+id/login2_to_profile"
+            app:destination="@id/navigation_notifications" />
     </fragment>
 </navigation>
