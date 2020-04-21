@@ -66,19 +66,5 @@ public class Login2 extends Fragment {
         return inflater.inflate(R.layout.fragment_login2, container, false);
     }
 
-    @Override
-    public void onViewCreated(@NonNull final View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
-        Button login = (Button)view.findViewById(R.id.login2_to_profile);
-
-        login.setOnClickListener(new View.OnClickListener() {
-                                       @Override
-                                       public void onClick(View v) {
-                                           Navigation.findNavController(view).navigate(R.id.login2_to_profile);
-                                       }
-                                   }
-        );
-
-    }
 
 }
