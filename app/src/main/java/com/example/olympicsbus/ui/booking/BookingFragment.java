@@ -13,11 +13,13 @@ import com.example.olympicsbus.R;
 
 public class BookingFragment extends Fragment {
 
-    private DashboardViewModel dashboardViewModel;
+
+
+    private DashboardViewModel bookingViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        dashboardViewModel =
+        bookingViewModel =
                 ViewModelProviders.of(this).get(DashboardViewModel.class);
         View root = inflater.inflate(R.layout.fragment_bookings, container, false);
          /*
