@@ -22,9 +22,9 @@
     </fragment>
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.olympicsbus.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
+        android:id="@+id/navigation_profile"
+        android:name="com.example.olympicsbus.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
         tools:layout="@layout/fragment_profile" >
         <action
             android:id="@+id/logout_to_login2"
@@ -88,7 +88,7 @@
         android:label="seatBusTypeC" />
     <fragment
         android:id="@+id/bookingFragment"
-        android:name="com.example.olympicsbus.ui.dashboard.BookingFragment"
+        android:name="com.example.olympicsbus.ui.booking.BookingFragment"
         android:label="fragment_bookings"
         tools:layout="@layout/fragment_bookings" />
     <fragment
@@ -98,7 +98,7 @@
         tools:layout="@layout/fragment_signup" >
         <action
             android:id="@+id/signup_to_profile"
-            app:destination="@id/navigation_notifications" />
+            app:destination="@id/navigation_profile" />
     </fragment>
     <fragment
         android:id="@+id/login2"
@@ -107,6 +107,6 @@
         tools:layout="@layout/fragment_login2" >
         <action
             android:id="@+id/login2_to_profile"
-            app:destination="@id/navigation_notifications" />
+            app:destination="@id/navigation_profile" />
     </fragment>
 </navigation>

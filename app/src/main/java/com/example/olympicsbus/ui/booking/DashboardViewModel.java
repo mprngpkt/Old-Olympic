@@ -1,4 +1,4 @@
-package com.example.olympicsbus.ui.dashboard;
+package com.example.olympicsbus.ui.booking;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
