@@ -49,22 +49,7 @@
         android:id="@+id/timeTable"
         android:name="com.example.olympicsbus.timeTable"
         android:label="fragment_time_table"
-        tools:layout="@layout/fragment_time_table" >
-        <action
-            android:id="@+id/timeTable_to_seatBusTypeA"
-            app:destination="@id/seatBusTypeA" />
-        <action
-            android:id="@+id/action_timeTable_to_seatBusTypeB"
-            app:destination="@id/seatBusTypeB" />
-        <action
-            android:id="@+id/timeTable_to_seatBusTypeC"
-            app:destination="@id/seatBusTypeC" />
-    </fragment>
-    <fragment
-        android:id="@+id/seatBusTypeA"
-        android:name="com.example.olympicsbus.seatBusTypeA"
-        android:label="fragment_seat_bus_type"
-        tools:layout="@layout/fragment_seat_bus_type_a" />
+        tools:layout="@layout/fragment_time_table" />
     <fragment
         android:id="@+id/bus2"
         android:name="com.example.olympicsbus.Bus2"
@@ -84,15 +69,6 @@
             app:destination="@id/timeTable" />
     </fragment>
     <fragment
-        android:id="@+id/seatBusTypeB"
-        android:name="com.example.olympicsbus.seatBusTypeB"
-        android:label="fragment_seat_bus_type_b"
-        tools:layout="@layout/fragment_seat_bus_type_b" />
-    <fragment
-        android:id="@+id/seatBusTypeC"
-        android:name="com.example.olympicsbus.seatBusTypeC"
-        android:label="seatBusTypeC" />
-    <fragment
         android:id="@+id/signup"
         android:name="com.example.olympicsbus.signup"
         android:label="fragment_signup"
@@ -106,4 +82,9 @@
         android:name="com.example.olympicsbus.Login2"
         android:label="fragment_login2"
         tools:layout="@layout/fragment_login2" />
+    <fragment
+        android:id="@+id/bus"
+        android:name="com.example.olympicsbus.Bus"
+        android:label="fragment_bus"
+        tools:layout="@layout/fragment_bus" />
 </navigation>

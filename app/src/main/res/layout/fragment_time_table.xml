@@ -11,7 +11,7 @@
 
 
     <TextView
-        android:id="@+id/text_busestoswim"
+        android:id="@+id/text_bustimetable"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
@@ -19,53 +19,25 @@
         android:shadowDx="5"
         android:shadowDy="5"
         android:shadowRadius="2"
-        android:text="@string/txtBustoSwimming"
+        android:text="@string/txtBusTimeTable"
         android:textAlignment="center"
         android:textColor="#28527A"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.147" />
+        app:layout_constraintVertical_bias="0.071" />
 
-    <Button
-        android:id="@+id/btn_typeA"
-        android:layout_width="wrap_content"
+    <ListView
+        android:id="@+id/list_bustimetable"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="128dp"
-        android:text="@string/typeA"
-        android:textColor="#28527A"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_busestoswim"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <Button
-        android:id="@+id/btn_typeB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
-        android:text="@string/typeB"
-        android:textColor="#28527A"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_typeA" />
-
-    <Button
-        android:id="@+id/btn_typeC"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
-        android:text="@string/typeC"
-        android:textColor="#28527A"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_typeB" />
+        android:layout_marginTop="53dp"
+        app:layout_constraintTop_toBottomOf="@+id/text_bustimetable"
+        tools:layout_editor_absoluteX="5dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,7 +12,11 @@ import androidx.navigation.Navigation;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
+import android.widget.Toast;
 
 
 /**
@@ -24,6 +28,35 @@ import android.widget.Button;
  * create an instance of this fragment.
  */
 public class timeTable extends Fragment {
+
+    ListView timelist;
+    String timetable;
+    String[] lstitlebus;
+    ArrayAdapter<String> adapter;
+
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState){
+        super.onActivityCreated(savedInstanceState);
+        lstitlebus = new String[] {"A","B"};
+
+        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>
+                (getActivity(),R.layout.fragment_time_table,lstitlebus);
+
+        timelist = (ListView) getView().findViewById(R.id.list_bustimetable);
+        timelist.setAdapter(dataAdapter); //แสดงข้อมูลในlist View
+
+        //สร้างอีเว้นต์คลิกเลือกลิสต์รายการ
+        timelist.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                //เก็บค่าลิสต์ไว้ในสตริง
+                timetable = (String) parent.getItemAtPosition(position);
+                //แสดงข้อมูลผ่าน toast มั่วมา
+                Toast.makeText(getContext(), "Item value is"+timetable, Toast.LENGTH_LONG).show();
+
+            }
+        });
+    }
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -110,7 +143,7 @@ public class timeTable extends Fragment {
         // TODO: Update argument type and name
         void onFragmentInteraction(Uri uri);
     }
-
+/*
     @Override
     public void onViewCreated(@NonNull final View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
@@ -134,6 +167,8 @@ public class timeTable extends Fragment {
             public void onClick(View v) {
                 Navigation.findNavController(view).navigate(R.id.timeTable_to_seatBusTypeC);
             }
-        });
+        });*/
     }
-}
+
+
+
